@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \".claude\")",
+      "Bash(for file in .claude/CLAUDE.md .claude/agents/architect.md .claude/agents/implementer.md .claude/commands/security-audit.md .claude/protocols/no-shortcuts.md)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(wc -l \"$file\")",
+      "Bash(done)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
