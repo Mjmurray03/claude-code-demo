@@ -26,6 +26,8 @@ This demo showcases advanced Claude Code features including custom agents, slash
 ```
 /architect
 ```
+ Quick architecture:
+  /quick-architect Design notification system for 1000 concurrent users, sub-second latency
 
 **What to say to Claude:**
 "Design a system to send real-time notifications when stock prices hit user-defined thresholds. We need to support 1000 concurrent users with sub-second notification latency."
@@ -51,6 +53,8 @@ This demo showcases advanced Claude Code features including custom agents, slash
 ```
 /implementer
 ```
+Quick implementation:
+/quick-implement Add rate limiting to API endpoints in src/api/main.py
 
 **What to say to Claude:**
 "Implement a function to calculate the Bollinger Bands indicator. It needs the 20-period simple moving average and standard deviation bands at +2 and -2 sigma."
@@ -101,6 +105,10 @@ def get_user(user_id):
 ```
 /security-audit examples/vulnerable_api.py
 ```
+/security-audit on examples/vulnerable_api.py but only report critical and high severity issues in summary format
+
+Quick vulnerability fix:
+  /fix-vuln SQL injection in examples/vulnerable_api.py lines 21,44,65,77
 
 **What to highlight:**
 - Detects hardcoded credentials
